@@ -1,4 +1,4 @@
-import { ToDoList } from "./todo-plugin";
+import { ToDoList } from "./components/todo-plugin";
 
 // force assert that element exists
 const parent = document.getElementById("my-list") as HTMLElement;

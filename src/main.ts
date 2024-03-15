@@ -1,1 +1,1 @@
-import './scripts/app'
+import './app'

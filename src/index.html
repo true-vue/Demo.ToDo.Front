@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Notes</title>
-    <link href="styles/default.css" rel="stylesheet" />
+    <link href="/src/css/default.css" rel="stylesheet" />
   </head>
   <body>
     <div id="my-list"></div>
@@ -16,7 +16,7 @@
     ></script>
     <script>
       require.config({
-        baseUrl: "../dist",
+        baseUrl: "/dist",
       });
       require(["main"]);
     </script>

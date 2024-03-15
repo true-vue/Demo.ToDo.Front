@@ -1,0 +1,23 @@
+{
+  "name": "demo.todo.front",
+  "version": "0.0.1",
+  "description": "simple todo app (html) with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://true-vue@github.com/true-vue/Demo.ToDo.Front.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "pkolodziej@wsei.edu.pl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/true-vue/Demo.ToDo.Front/issues"
+  },
+  "homepage": "https://github.com/true-vue/Demo.ToDo.Front#readme",
+  "dependencies": {}
+}

@@ -1,15 +1,21 @@
 {
-  "name": "demo-todo-front-vite",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "demo.todo.front.webpack",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack --watch --mode=development"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.1.6"
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }

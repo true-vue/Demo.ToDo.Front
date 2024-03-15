@@ -1,1 +1,2 @@
-import './scripts/app'
+import './css/default.css'
+import './app'

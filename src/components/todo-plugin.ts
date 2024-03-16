@@ -2,12 +2,17 @@ export class ToDoList {
     #listElement = document.createElement("ul");
     #addButtonElement = document.createElement("button");
     #newItemTextElement = document.createElement("textarea");
+    #listMessage = document.createElement("div");
   
     constructor(parent: HTMLElement) {
       const mainWrapper = document.createElement("div");
       mainWrapper.classList.add("todo");
       // mainWrapper.textContent = "test";
-  
+      this.#listMessage.classList.add("todo-message");
+      this.#listMessage.textContent = "Lista jest pusta - dodaj nowy element poniżej!";
+
+      mainWrapper.appendChild(this.#listMessage)
+
       this.#listElement.classList.add("todo-list");
       mainWrapper.appendChild(this.#listElement);
   
@@ -46,6 +51,7 @@ export class ToDoList {
       deleteButton.textContent = "Usuń";
       deleteButton.addEventListener("click", () => {
         this.#listElement.removeChild(itemWrapper);
+        this.#setListMessage();
       });
   
       const editButton = document.createElement("button");
@@ -78,6 +84,16 @@ export class ToDoList {
       this.#listElement.appendChild(itemWrapper);
   
       this.#newItemTextElement.value = "";
+      this.#setListMessage();
+    }
+
+    #setListMessage(){
+      const hasItems = this.#listElement.hasChildNodes();
+      if (hasItems) {
+        this.#listMessage.classList.add("hidden");
+      } else {
+        this.#listMessage.classList.remove("hidden");
+      }
     }
   }
   
